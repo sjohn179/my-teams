@@ -1,12 +1,11 @@
 {
-  "homepage": "https://sjohn179.github.io/my-teams",
+  "homepage": "https://sjohn179.github.io/myteams",
   "name": "NODE_PASSPORT_LOGIN",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },

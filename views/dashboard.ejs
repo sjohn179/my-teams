@@ -1,0 +1,57 @@
+<div class="container-dash">
+  
+    <div class="dash-head-div">
+      <h1 class="mt-4" id="dashboard-header">My Teams</h1>
+      <p class="lead mb-3-dash">Welcome, <%= name %>!</p>
+
+
+      <div class="nav-btns">
+        <a href="/users/settings" class="btn btn-secondary nav-btn" id="btn-settings">Settings</a>
+        <a href="/users/logout" class="btn btn-secondary nav-btn" id="btn-logout">Logout</a>
+      </div>
+
+      
+      <%- include('partials/messages') %>
+      
+    </div>
+    
+    
+    <div class="grid-img-wrapper">
+      
+
+      <div class="grid-img" id="nfl-img" style="background: url('/wallpapers/nfl/<%= nflTeam%>.png'); background-size: contain; background-position: center; background-size: 200%; border-radius: 22px; position: relative; width: 100%; height: 42vh; background-repeat: no-repeat; background-position: center; cursor: pointer;">
+        <a href="<%= nflTeamURL(nflTeam) %>" target="_blank"><div class="back"></div>
+        <div class="text text-dark"><%= nflTeam === 'Washington Football Team' ? 'Washington Football' : nflTeam %></div></a>
+      </div>
+    
+      <div class="grid-img" id="nba-img" style="background: url('/wallpapers/nba/<%= nbaTeam%>.png'); background-size: contain; background-position: center; background-size: 225%; border-radius: 22px; position: relative; width: 100%; height: 42vh; background-repeat: no-repeat; background-position: center; cursor: pointer;">
+        <a href="<%= nbaTeamURL(nbaTeam) %>" target="_blank"><div class="back"></div>
+        <div class="text text-dark"><%= nbaTeam %></div></a>
+      </div>
+    
+      <div class="grid-img" id="mlb-img" style="background: url('/wallpapers/mlb/<%= mlbTeam%>.png'); background-size: contain; background-position: center; background-size: 225%; border-radius: 22px; position: relative; width: 100%; height: 42vh; background-repeat: no-repeat; background-position: center; cursor: pointer;">
+        <a href="<%= mlbTeamURL(mlbTeam) %>" target="_blank"><div class="back"></div>
+        <div class="text text-dark"><%= mlbTeam %></div></a>
+      </div>
+    
+      <div class="grid-img" id="nhl-img" style="background: url('/wallpapers/nhl/<%= nhlTeam%>.png'); background-size: contain; background-position: center; background-size: 200%; border-radius: 22px; position: relative; width: 100%; height: 42vh; background-repeat: no-repeat; background-position: center; cursor: pointer;">
+        <a href="<%= nhlTeamURL(nhlTeam) %>" target="_blank"><div class="back"></div>
+        <div class="text text-dark"><%= nhlTeam %></div></a>
+      </div>
+      </div>
+    
+      <footer class="footer">
+        <p class="copy">&copy; 2021, Rabbithole Development</p>
+        <p class="date"><%= thisDate() %>
+        </p>
+      </footer>
+  
+  
+  </div>
+  
+  
+  
+  
+    
+  <!--Moved logout button to top-->
+ 

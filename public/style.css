@@ -1,0 +1,742 @@
+:root {
+  /*
+  TO CHANGE:
+  background-color: make dark;
+  background-color (card): make dark;
+  text: make light;
+
+  */
+
+
+  --bodyBgColor: rgb(254,254,254);
+  --bodyFontColor: rgb(32,32,32);
+  --cardBgColor: rgb(253,253,253);
+  --linkColor: rgb(0,144,128);
+  --linkColorHover: rgb(0,188,188);
+  --linkBorderColor: rgb(88,88,88);
+  --loginBtnBgColor: rgb(128,128,128);
+  --loginBtnBorderColor: rgb(128,128,128);
+  --loginBtnFontColor: rgb(254,254,254);
+  --lsBtnBgColor: rgb(8,8,8);
+  --lsBtnBorderColor: rgb(16,16,16);
+  --lsBtnFontColor: rgb(254,254,254);
+  --teamFontColor: rgb(254,254,254);
+  --teamBgColor: rgb(16,16,16);
+  --footerBgColor: rgb(16,16,16);
+  --footerFontColor: rgb(245,245,245);
+
+
+
+
+  --bodyBgColorDark: rgb(32,32,32);
+  --bodyFontColorDark: rgb(245,245,245);
+  --cardBgColorDark: rgb(48,48,48);
+  --linkColorDark: rgb(245,245,245);
+  --linkColorHoverDark: rgb(254,254,254);
+  --linkBorderColorDark: rgb(212,212,212);
+  --loginBtnBgColorDark: rgb(97,97,97);
+  --loginBtnBorderColorDark: rgb(72,72,72);
+  --loginBtnFontColorDark: rgb(254,254,254);
+  --lsBtnBgColorDark: rgb(72,72,72);
+  --lsBtnBorderColorDark: rgb(84,84,84);
+  --lsBtnFontColorDark: rgb(254,254,254);
+  --teamFontColorDark: rgb(8,8,8);
+  --teamBgColorDark: rgb(254,254,254);
+  --footerBgColorDark: rgb(54,54,54);
+  --footerFontColorDark: rgb(254,254,254);
+}
+
+
+.container {
+  background-color: var(--bodyBgColor);
+  color: var(--bodyFontColor);
+}
+
+.container-dark, .container-dash-dark {
+  background-color: var(--bodyBgColorDark);
+  color: var(--bodyFontColorDark);
+}
+
+.container-dark, .container-dash-dark {
+  /*height: fit-content;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 1.44rem!important;*/
+  margin-top: 7vh;
+}
+
+.container-dash-dark {
+  background-color: var(--bodyBgColorDark);
+}
+
+.switch-to-dark, .switch-to-light {
+  width: 60%;
+  margin: 1vh auto 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-msg-dash {
+  margin: 8vh auto -4vh;
+  text-align: center;
+}
+
+.card-body {
+  background-color: var(--cardBgColor);
+}
+
+.card-body-dark {
+  background-color: var(--cardBgColorDark);
+}
+
+.btn-secondary, .btn-secondary:hover {
+  color: var(--loginBtnFontColor);
+  background-color: var(--loginBtnBgColor);
+  border-color: var(--loginBtnBorderColor);
+}
+
+.btn-tertiary, .btn-tertiary:hover {
+  color: rgb(254,254,254);
+  background-color: rgb(2,2,2);
+}
+
+.btn-tertiary a, .btn-tertiary a:hover {
+  font-weight: 900;
+}
+
+.btn-secondary-dark {
+  color: var(--loginBtnFontColorDark);
+  background-color: var(--loginBtnBgColorDark);
+  border-color: var(--loginBtnBorderColorDark);
+}
+
+.btn-secondary-dark:hover {
+  color: rgb(254,254,254);
+  background-color: rgb(144,144,144);
+  border-color: rgb(129,129,129);
+}
+
+.pg-theme {
+  /* width: 32%; */
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+
+  
+  font-size: 0.88rem;
+}
+
+.pg-theme a {
+  font-weight: normal;
+}
+
+footer {
+  background-color: var(--footerBgColor);
+  color: var(--footerFontColor);
+  text-align: center;
+  height: fit-content;
+  line-height: 2;
+  margin-top: 10vh;
+  padding: 2vh;
+  font-weight: bold;
+}
+
+.footer-dark {
+  background-color: var(--footerBgColorDark);
+  color: var(--footerFontColorDark);
+}
+
+.sports {
+  color: rgb(16,16,16);
+}
+
+.home-logo {
+  margin: auto;
+  height: 32vh;
+  margin-bottom: 2vh;
+  border-radius: 29px;
+  
+}
+
+.mt-5 {
+  /*margin-top: 2rem!important;*/
+
+  margin-top: 4vh!important;
+}
+
+.container-dash, .container-dash-dark {
+  /*border: 1px solid rgb(128,128,128);*/
+  margin: auto;
+}
+
+.container-dash-dark {
+  margin-top: 7vh;
+}
+
+.copy, .date {
+  height: 50%;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+button {
+  transition: ease-in-out 1s;
+}
+
+button:hover {
+  font-family: 'Pacifico', cursive;
+}
+
+.form-group {
+    margin-bottom: 1.21rem;
+}
+
+.form-control {
+    height: calc(1.5em + 0.75rem + 2px);
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+}
+
+
+.btn-primary {
+  background-color: rgb(48,144,144);
+  border-color: rgb(29,124,116);
+}
+
+.btn-primary:hover {
+  background-color: rgb(48,144,144);
+  border-color: rgb(29,124,116);
+}
+
+
+.btn-primary-dark {
+  /*color: rgb(16,16,16);*/
+  background-color: rgb(88,172,172);
+  border-color: rgb(48,162,155);
+}
+
+.btn-primary-dark:hover {
+  border-color: rgb(75,167,167);
+  background-color: rgb(42,155,148);
+}
+
+a {
+    color: var(--linkColor);
+    font-weight: bold;
+    text-decoration: none;
+
+    /*border-left: 1px solid var(--linkBorderColor);
+    border-right: 1px solid var(--linkBorderColor);
+    padding: 1vw;*/
+}
+
+a:hover {
+    color: var(--linkColorHover);
+
+    font-family: 'Pacifico', cursive;
+}
+
+.lead {
+    text-align: center;
+}
+
+#btn-reg-reset {
+    margin-top: 1.25vh;
+}
+
+#dashboard-header, #home-header {
+    text-align: center;
+    margin-bottom: 8vh;
+
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive;
+    /*border: 1px solid rgb(3,3,3);
+    padding: 2vh;
+    color: rgb(254,254,254);
+    background-color: rgb(16,16,16);*/
+}
+
+.nav-btns {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
+.nav-btn {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 8vh;
+}
+
+#nfl-img, #nfl-img-dark {
+    grid-area: nfl-img;
+    /*background: url('./wallpapers/nfl/nfl.png');*/
+    /*background-image: url();*/
+  }
+
+
+  #nba-img, #nba-img-dark {
+    grid-area: nba-img;
+    background: url('./wallpapers/nba/heat.png');
+    /*background-image: url();*/
+  }
+
+  #mlb-img, #mlb-img-dark {
+      grid-area: mlb-img;
+      background: url('./wallpapers/mlb/marlins.png');
+      /*background-image: url();*/
+    }
+  
+  
+    #nhl-img, #nhl-img-dark {
+      grid-area: nhl-img;
+      background: url('./wallpapers/nhl/panthers.png');
+      /*background-image: url();*/
+    }
+  
+  
+  
+  
+  .grid-img-wrapper {
+    /*add space above*/
+    /*margin-top: 12px;*/
+    /*to display photos in rows and columns*/
+    display: grid;
+    /*to evenly space 4 columns within the grid*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*establishes that the number of rows
+      is dependent upon how many photos*/
+    grid-template-rows: auto;
+    /*gap (horizontal and vertical) between each photo in gallery*/
+    grid-gap: 4vh;
+    /*designating each row of grid*/
+    grid-template-areas:
+      "nfl-img nfl-img nfl-img nfl-img"
+      "nba-img nba-img nba-img nba-img"
+      "mlb-img mlb-img mlb-img mlb-img"
+      "nhl-img nhl-img nhl-img nhl-img";
+    /*"gallery-p gallery-p gallery-p gallery-p"
+      "gallery-h2 gallery-h2 gallery-h2 gallery-h2 "
+      "img7 img2 img3 img4"
+      "img5 img1 img3 img6";*/
+    margin-top: 6vh;
+    margin-bottom: 8.4px;
+    /*opacity: 0.84;*/
+    margin: auto;
+    margin-top: 12vh;
+  }
+
+  .success-msg-dash, .grid-img-wrapper {
+    width: 80vw;
+  }
+  
+  
+  .grid-img {
+    border-radius: 22px;
+    position: relative;
+  }
+  
+  
+  .grid-img {
+    /*width of each individual image*/
+    width: 100%;
+    /*height of each individual image*/
+    height: 28vh;
+    /*dictates that the image should not be
+      repeated within the container*/
+    background-repeat: no-repeat;
+    /*establishes that the image should "cover"
+      entire container*/
+    /*background-size: cover;*/
+    /*center image within container*/
+    background-position: center;
+    /*turn cursor into hand*/
+    cursor: pointer;
+  }
+  
+ 
+  
+  
+  .grid-cell-overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.46;
+    /*background-color: rgb(2,2,2);*/
+    z-index: 99;
+    border-radius: 360px;
+    transform: rotate(360deg);
+    background-image: linear-gradient(to bottom, rgb(0, 255, 234), rgb(62, 0, 237));
+    /*background-color: rgb(0,188,162);*/
+  }
+
+  #nfl-img, #nba-img, #mlb-img, #nhl-img {
+    background-position: center;
+    opacity: 0.96;
+  }
+
+  #nfl-img-dark, #nba-img-dark, #mlb-img-dark, #nhl-img-dark {
+    background-position: center;
+    opacity: 0.75;
+  }
+
+  #nfl-img:hover, #nba-img:hover, #mlb-img:hover, #nhl-img:hover, #nfl-img-dark:hover, #nba-img-dark:hover, #mlb-img-dark:hover, #nhl-img-dark:hover {
+    opacity: 1;
+  }
+  
+  
+  .back, .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*font-family: 'Lobster', cursive;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.44rem;
+    transition: all ease-in-out 720ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--teamFontColor);
+
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  width: 100%;
+  text-align: center;
+  }
+
+
+  .back {
+    height: 100%;
+    width: 100%;
+  }
+
+  .text {
+    background-color: var(--teamBgColor);
+    opacity: 0.62;
+    
+    border-radius: 22px;
+  }
+
+  .text-dark {
+    color: var(--teamFontColorDark);
+    background-color: var(--teamBgColorDark);
+  }
+
+  .nav-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .update-password {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pw-left, .pw-right {
+    width: 50%;
+  }
+
+  .pw-right {
+    text-align: center;
+  }
+  
+
+  @media only screen and (orientation: portrait) {
+    .container-dark {
+      height: fit-content;
+      min-height: 100vh;
+    }
+
+    
+
+    
+    .mt-5-wel {
+      margin-top: 3vh!important;
+    }
+  
+    .home-logo {
+      width: 70%;
+    }
+    
+    .dash-head-div {
+      margin-bottom: 6vh;
+    }
+
+    #dashboard-header, #home-header {
+      margin-bottom: 4vh;
+    }
+
+    .nav-btn {
+      margin-top: 2vh;
+    }
+
+    footer {
+      margin-top: 8vh;
+    }
+
+    @media only screen and (min-width: 500px) {
+      .mb-3-dash {
+        font-size: 1.5rem;
+      }
+
+      .container-dash, .container-dash-dark {
+        width: 88vw;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      footer {
+        font-size: 0.84rem;
+      }
+
+      .nav-btns {
+        width: 84%;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      footer {
+        font-size: 0.67rem;
+      }
+
+      #dashboard-header, #home-header {
+        font-size: 2.72rem;
+      }
+
+      .mb-3-dash {
+        font-size: 1.10rem;
+      }
+
+      .nav-btns {
+        width: 88%;
+      }
+    }
+  }
+
+
+@media only screen and (orientation: landscape) {
+  .container-dark, .container-dash-dark {
+    height: fit-content;
+    min-height: 100vh;
+  }
+  
+  .home-logo {  
+    width: 40%;
+  }
+ 
+  .container-dash, .container-dash-dark {
+    width: 84vw;
+  }
+  
+  .mb-3-dash {
+    font-size: 1.44rem;
+  }
+
+  .nav-btn, footer {
+    font-size: 1.16rem;
+  }
+  
+  .nav-btn {
+    margin-top: 2vh;
+    padding: 2vh;
+  }
+
+  .grid-img-wrapper {
+    /*add space above*/
+    /*margin-top: 12px;*/
+    /*to display photos in rows and columns*/
+    display: grid;
+    /*to evenly space 4 columns within the grid*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*establishes that the number of rows
+      is dependent upon how many photos*/
+    grid-template-rows: auto;
+    /*gap (horizontal and vertical) between each photo in gallery*/
+    grid-gap: 2vw;
+    /*designating each row of grid*/
+    grid-template-areas:
+      "nfl-img nba-img mlb-img nhl-img"
+      "nfl-img nba-img mlb-img nhl-img"
+      "nfl-img nba-img mlb-img nhl-img"
+      "nfl-img nba-img mlb-img nhl-img";
+    /*"gallery-p gallery-p gallery-p gallery-p"
+      "gallery-h2 gallery-h2 gallery-h2 gallery-h2 "
+      "img7 img2 img3 img4"
+      "img5 img1 img3 img6";*/
+    margin-top: 16vh;
+    margin-bottom: 8.4px;
+    /*opacity: 0.84;*/
+    width: 80vw;
+    margin: auto;
+    margin-top: 12vh;
+  }
+
+  .grid-img {
+    height: 44vh;
+  }
+
+  #dashboard-header, #home-header {
+    margin-bottom: 6vh;
+    font-size: 4rem;
+  }
+
+  .mb-3-dash {
+    margin-bottom: 2vh!important;
+  }
+
+  .dash-head-div {
+    margin-bottom: 9vh!important;
+  }
+
+  @media only screen and (max-width: 1299px) {
+    .grid-img-wrapper {
+      /*add space above*/
+      /*margin-top: 12px;*/
+      /*to display photos in rows and columns*/
+      display: grid;
+      /*to evenly space 4 columns within the grid*/
+      grid-template-columns: 1fr 1fr;
+      /*establishes that the number of rows
+        is dependent upon how many photos*/
+      grid-template-rows: auto;
+      /*gap (horizontal and vertical) between each photo in gallery*/
+      grid-gap: 2vw;
+      /*designating each row of grid*/
+      grid-template-areas:
+        "nfl-img nba-img"
+        "mlb-img nhl-img";
+      /*"gallery-p gallery-p gallery-p gallery-p"
+        "gallery-h2 gallery-h2 gallery-h2 gallery-h2 "
+        "img7 img2 img3 img4"
+        "img5 img1 img3 img6";*/
+      margin-top: 16vh;
+      margin-bottom: 8.4px;
+      opacity: 0.84;
+      width: 80vw;
+      margin: auto;
+      margin-top: 12vh;
+    }
+
+    .grid-img {
+      height: 24vh;
+    }
+    @media only screen and (max-width: 999px) {
+      .grid-img {
+        height: 46vh;
+      }
+    }
+  }
+
+}
+  
+  
+
+  .nav-btn {
+    color: var(--lsBtnFontColor);
+    background-color: var(--lsBtnBgColor);
+    border-color: var(--lsBtnBorderColor);
+    opacity: 0.88;
+  }
+
+  .nav-btn-dark {
+    color: var(--loginBtnFontColorDark);
+    background-color: var(--loginBtnBgColorDark);
+    border-color: var(--loginBtnBorderColorDark);
+    opacity: 0.88;
+  }
+
+
+  .nav-btn:hover {
+    opacity: 1;
+  }
+
+  @keyframes text-blink {
+    0%, 100% {
+      background: url(wallpapers/nfl/nfl.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+
+    25% {
+      background: url(wallpapers/nba/nba.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+
+    50% {
+      background: url(wallpapers/mlb/mlb.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+
+    75% {
+      background: url(wallpapers/nhl/nhl.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+  }
+
+
+
+  .alert-success-dark {
+    color: rgb(0,72,0);
+    background-color: rgb(144,212,144);
+    border-color: rgb(98,212,98);
+  }
+
+
+  .alert-warning {
+    color: rgb(88,88,0);
+    background-color: rgb(229,229,144);
+    border-color: rgb(172,172,84);
+  }
+
+  #nhl-img {
+    box-shadow: 0px 0px 8px 4px rgb(120,120,212);
+  }
+
+  #nhl-img-dark {
+    box-shadow: 0px 0px 8px 1px rgb(254,254,254);
+  }
+
+  .switch-to-dark:hover {
+    background-color: rgb(29,109,109);
+  }
+
+  .switch-to-dark:hover, .switch-to-light:hover {
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+  }
+
+
+  .dark-body {
+    height: fit-content;
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: rgb(40,40,40);
+  }

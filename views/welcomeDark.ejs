@@ -1,0 +1,51 @@
+<% const darkLayout = () => {%>
+    <% console.log("darky dark");%>
+    <% changeLayout("dark"); %>
+  <%}%>
+  
+  <% const lightLayout = () => {%>
+    <% console.log("lighty light");%>
+    <% changeLayout("light"); %>
+  <%}%>
+  
+<div class="dark-body">
+  <div class='container container-dark'>
+    
+    <h1 class="mt-4" id="home-header">My Teams</h1>
+  
+  <p class="lead mb-3-dash">Your sports fandoms in one location</p>
+
+  <div class="pg-theme">
+    
+    Theme: 
+
+    <div class="dark-theme active-theme">
+      &nbsp;DARK. (Prefer the light? 
+      <a href="../">Click here</a>.)
+    </div>
+    
+    
+  </div>
+
+  <div class="row mt-5 mt-5-wel">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body card-body-dark text-center">
+        <!--style="animation: text-blink 1s infinite ease-in-out"-->
+        <!--<i class="fab fa-node-js fa-3x" ></i>-->
+        <h1 class="home-logo" style="animation: text-blink 12s infinite ease-in-out;"><div class=" fab fa-3x"></div></h1>
+        <p>Create an account or login</p>
+        <a href="/users/register_d" class="btn btn-primary btn-primary-dark btn-block mb-2"
+          >Register</a
+        >
+        <a href="/users/login_d" class="btn btn-secondary btn-secondary-dark btn-block">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>  
+  
+  
+  
+  
+  <% function hello(event) { console.log(`value = ${event.target.value}`);}%>
+  

@@ -8,10 +8,10 @@ const currDate = require('../currDate.js');
 
 const events = require('events');
 
-const postCSS = require('postcss');
+/* const postCSS = require('postcss');
 const postCSSNested = require('postcss-nested');
 const cssVariables = require('postcss-css-variables');
-const injectVariables = require('postcss-inject-css-variables');
+const injectVariables = require('postcss-inject-css-variables'); */
 
 const fs = require('fs');
 
@@ -20,7 +20,7 @@ const myCSS = fs.readFileSync("public/style.css","utf-8");
 const myEmitter = new events.EventEmitter();
 
 let newDate, output;
-
+/*
  const changeLayout = (theme) => { 
      if(theme === 'light') { 
        console.log('theme changed to light') 
@@ -72,7 +72,7 @@ const variables = {
             injectVariables(variables)
         ]).process(myCSS).css;
 
-       console.log(`output: ${output}`);*/
+       console.log(`output: ${output}`);
      } else if(theme === 'dark') { 
      console.log('theme changed to dark')
      
@@ -123,9 +123,9 @@ const variables = {
         injectVariables(variables)
     ]).process(myCSS).css;
 
-    console.log(`output: ${output}`);*/
+    console.log(`output: ${output}`);
      } 
-   } 
+   } */
 
 // display "welcome" file on the default route
 router.get('/', (req, res) => res.render('welcome', {

@@ -92,19 +92,23 @@
   background-color: var(--cardBgColorDark);
 }
 
-.btn-secondary, .btn-secondary:hover {
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active {
   color: var(--loginBtnFontColor);
   background-color: var(--loginBtnBgColor);
   border-color: var(--loginBtnBorderColor);
 }
 
-.btn-tertiary, .btn-tertiary:hover {
+.btn-tertiary, .btn-tertiary:hover, .btn-tertiary:active {
   color: rgb(254,254,254);
   background-color: rgb(2,2,2);
 }
 
 .btn-tertiary a, .btn-tertiary a:hover {
   font-weight: 900;
+}
+
+.btn-tertiary-dark, .btn-tertiary-dark:hover {
+  border-color: rgb(20,112,102);
 }
 
 .btn-secondary-dark {
@@ -214,7 +218,7 @@ button:hover {
   border-color: rgb(29,124,116);
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   background-color: rgb(48,144,144);
   border-color: rgb(29,124,116);
 }

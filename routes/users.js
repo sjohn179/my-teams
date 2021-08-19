@@ -307,8 +307,7 @@ router.post('/update_password', (req, res, next) => {
                                 res.render(
                                     'updatePW', {
                                         errors,
-                                        email,
-                                        password
+                                        email
                                     }
                                 );
                     }
@@ -425,8 +424,7 @@ router.post('/update_password_d', (req, res, next) => {
                                 res.render(
                                     'updatePWDark', {
                                         errors,
-                                        email,
-                                        password
+                                        email
                                     }
                                 );
                     }

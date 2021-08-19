@@ -129,12 +129,12 @@ const variables = {
 
 // display "welcome" file on the default route
 router.get('/', (req, res) => res.render('welcome', {
-    changeLayout: changeLayout
+    // changeLayout: changeLayout
 }));
 
 // display "welcome" file on the default route
 router.get('/_d', (req, res) => res.render('welcomeDark', {
-    changeLayout: changeLayout
+    // changeLayout: changeLayout
 }));
 
 
